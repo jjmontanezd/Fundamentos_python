@@ -1,55 +1,22 @@
 
-# ACTIVIDAD 2: CALCULADORA DE NOTAS
+nota=5
+primera_nota=float(input("ingrese la primera nota "))
+segunda_nota=float(input("ingrese la segunda nota "))
+tercera_nota=float(input("ingrese la tercera nota "))
 
-# Solicitar las tres calificaciones
-nota1 = float(input("Ingrese la primera nota: "))
-nota2 = float(input("Ingrese la segunda nota: "))
-nota3 = float(input("Ingrese la tercera nota: "))
 
-# calcular promedio
-promedio = (nota1 + nota2 + nota3) / 3
+promedio= (primera_nota + segunda_nota + tercera_nota)/3
 
-# Calcular los puntos que faltan para llegar a 5.0
-faltante = 5.0  - promedio
+faltante=5.0 -promedio
 
-# Determinar si el estudiante aprueba
-aprueba = promedio >= 3.0
+if nota >=3.0:
+    print("Has pasado la materia ")
 
-# Mostrar los resultados
-
-print("Primera nota:", nota1)
-print("Segunda nota:", nota2)
-print("Tercera nota:", nota3)
-print("Promedio:", round(promedio, 2))
-print("Puntos para llegar a 5.0:", round(max(0, faltante), 2))
-
-if aprueba:
-    print("Resultado: Aprobado")
 else:
-    print("Resultado: Reprobado")
+    print("perdiste la materia ")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("Primera nota",primera_nota)
+print("segunda nota",segunda_nota )
+print("tercera nota", tercera_nota)
+print("promedio",round(promedio,2))
+print("te hace falta llegar a 5", round(max(0, faltante),2))

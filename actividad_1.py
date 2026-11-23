@@ -9,7 +9,6 @@ promedio = 4.0
 activo = True
 
 #Usa print() para mostrar cada variable con una etiqueta descriptiva.
-
 print("Mi nombre es: " + nombre)
 print("Mi apellido es: " + apellido)
 print("Mi numero de ficha es: ", ficha)
